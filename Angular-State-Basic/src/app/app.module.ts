@@ -1,3 +1,4 @@
+import { appStoreProviders } from './../store/app.store';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -12,7 +13,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [appStoreProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
